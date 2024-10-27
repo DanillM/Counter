@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <title>Counter Project</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row max-height align-items-center">
+            <div class="col-md-6 text-center main-container p-5">
+                <h1 class="text-uppercase">Counter</h1>
+                <h1 id="counter">0</h1>
+
+                
+                <div class="input-group mb-3">
+                    <input type="number" id="specificNumber" class="form-control" placeholder="Enter a number">
+                    <button class="btn btn-primary" id="insertNumber">Insert Number</button>
+                </div>
+
+                <div class="btn-container d-flex justify-content-around flex-wrap">
+                    <button class="btn counterBtn prevBtn text-uppercase m-2" id="decrease-10">-10</button>
+                    <button class="btn counterBtn prevBtn text-uppercase m-2" id="lower_count">Lower Count</button>
+                    <button class="btn counterBtn nextBtn text-uppercase m-2" id="increase-10">+10</button>
+                    <button class="btn counterBtn prevBtn text-uppercase m-2" id="decrease-100">-100</button>
+                    <button class="btn counterBtn prevBtn text-uppercase m-2" id="add-count">Add Count</button>
+                    <button class="btn counterBtn nextBtn text-uppercase m-2" id="increase-100">+100</button>
+                    <button class="btn counterBtn prevBtn text-uppercase m-2" id="decrease-1000">-1000</button>
+                    <button class="btn counterBtn prevBtn text-uppercase m-2" id="set-to-zero">Set to 0</button>
+                    <button class="btn counterBtn nextBtn text-uppercase m-2" id="increase-1000">+1000</button>
+                </div>
+            </div>
+
+            
+            <div class="col-md-4 right-column">
+                <h5>History</h5>
+                <div class="history" id="history">
+                    <div id="historyContent">0</div> 
+                </div>
+                <div class="mt-3">
+                    <button class="btn btn-danger" id="clearHistory">Clean History</button>
+                    <button class="btn btn-secondary" id="toggleHistory">Hide History</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</body>
+
+</html>
